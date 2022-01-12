@@ -43,8 +43,7 @@ body {
   margin-left: 0 auto;
   align-items: center;
 }
-
-.header-nav__.main-nav .had {
+.had {
   display: flex;
 }
 .main-nav {
@@ -339,7 +338,12 @@ body {
   border-color: var(--hov-foc-color);
   border: 1px solid var(--hov-foc-color);
 }
-
+.form-grup input:hover,
+.form-grup input:focus {
+  border-color: var(--hov-foc-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: var(--hov-foc-color);
+}
 .form-grup input:hover + .fon,
 .form-grup input:focus + .fon {
   fill: var(--hov-foc-color);
