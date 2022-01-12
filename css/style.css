@@ -43,7 +43,8 @@ body {
   margin-left: 0 auto;
   align-items: center;
 }
-.had {
+
+.header-nav__.main-nav .had {
   display: flex;
 }
 .main-nav {
