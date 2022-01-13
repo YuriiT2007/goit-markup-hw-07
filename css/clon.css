@@ -1,4 +1,4 @@
-/* -----------Основа----------*/
+/* -----------разметка boby----------*/
 
 h1,
 h2,
@@ -17,7 +17,7 @@ body {
   background-color: white;
   letter-spacing: 0.03em;
 }
-
+/* -----------разметка boby and----------*/
 :root {
   --main-bg-color: #ffffff;
   --dg-sacond-color: #2f303a;
@@ -28,7 +28,6 @@ body {
   --text-rgb-a: rgba(255, 255, 255, 0.6);
   --text-bg-dop: #f5f4fa;
 }
-
 .container {
   width: 1200px;
   outline: 1px solid transparent;
@@ -36,9 +35,8 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* -----------Основа AND----------*/
+/*------------разметка nav----------*/
 
-/* -----------Навигация Блок----------*/
 .header-nav {
   background-color: var(--main-bg-color);
   display: flex;
@@ -54,6 +52,7 @@ body {
   align-items: center;
   margin-right: 0px;
 }
+
 .link-studio {
   font-family: Raleway;
   font-weight: 700;
@@ -65,6 +64,7 @@ body {
   text-decoration: none;
   color: var(--text-dec-black);
 }
+
 .logoone {
   color: var(--hov-foc-color);
   font-family: Raleway;
@@ -73,6 +73,7 @@ body {
   line-height: 1.192;
   letter-spacing: 0.03em;
 }
+
 .logoand {
   font-family: Raleway;
   font-weight: 700;
@@ -99,6 +100,7 @@ body {
   display: flex;
   margin-left: 93px;
 }
+
 .boxin {
   margin-right: 50px;
   position: relative;
@@ -117,6 +119,7 @@ body {
 .stpoco .current {
   color: var(--hov-foc-color);
 }
+
 .link {
   color: var(--text-dec-black);
   text-decoration: none;
@@ -127,6 +130,10 @@ body {
   font-weight: 500;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* .link:hover {
+  color: pink;
+} */
+
 .contact {
   list-style: none;
   font-size: 14px;
@@ -155,7 +162,7 @@ body {
 }
 .link:hover,
 .link:focus {
-  color: var(--hov-foc-color);
+  color: #2196f3;
   fill: var(--hov-foc-color);
 }
 .marlin {
@@ -163,13 +170,13 @@ body {
 }
 .linka:hover,
 .linka:focus {
-  fill: var(--hov-foc-color);
+  fill: #2196f3;
 }
 .tel-befor {
   width: 100%;
   height: 100%;
   margin-right: 10px;
-  fill: var(--text-main-color);
+  fill: #757575;
 }
 .tel-befor:hover {
   fill: var(--hov-foc-color);
@@ -185,16 +192,16 @@ body {
 }
 .phone-a:hover,
 .phone-a:focus {
-  fill: var(--hov-foc-color);
+  fill: #2196f3;
 }
 .phone-svg {
   width: 10px;
   height: 16px;
   margin-right: 10px;
 }
-/* -----------Навигация Блок AND----------*/
+/*------------разметка nav and----------*/
 
-/*------------Блок SOLUTIONS--------------*/
+/*------------разметка solutions----------*/
 .solutions {
   background-color: var(--dg-sacond-color);
   letter-spacing: 0.06em;
@@ -214,6 +221,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /* background-image: linear-gradient(#2f303a 40%); */
 }
 
 .solution-business {
@@ -352,7 +360,7 @@ textarea:not(:placeholder-shown) {
 .form-grup label {
   margin-bottom: 4px;
   font-size: 12px;
-  color: var(--text-main-color);
+  color: #757575;
   line-height: 1.16;
   font-weight: 400;
   letter-spacing: 0.01em;
@@ -364,7 +372,7 @@ textarea:not(:placeholder-shown) {
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--text-dec-black);
+  color: #212121;
   margin-bottom: 12px;
 }
 
@@ -416,7 +424,7 @@ textarea:focus {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.task {
+.gemor {
   display: flex;
 }
 .kvadrat {
@@ -424,8 +432,8 @@ textarea:focus {
   width: 16px;
   height: 15px;
   border-radius: 4px;
-  border: 1px solid var(--text-dec-black);
-  border-color: var(--text-dec-black);
+  border: 1px solid black;
+  border-color: #212121;
   display: none;
 }
 .chekblue {
@@ -433,11 +441,11 @@ textarea:focus {
   width: 16px;
   height: 15px;
   border-radius: 4px;
-  border: 2px solid var(--text-dec-black);
+  border: 2px solid #212121;
   margin-right: 9px;
   margin-left: 10px;
 }
-.task input:checked + .chekblue {
+.gemor input:checked + .chekblue {
   background-image: url(../images/ichecki.svg);
   background-size: contain;
   border: 2px solid var(--hov-foc-color);
@@ -445,7 +453,7 @@ textarea:focus {
 }
 .sogltex {
   font-size: 14px;
-  color: var(--text-main-color);
+  color: #757575;
   line-height: 1.16;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -475,13 +483,12 @@ textarea:focus {
 }
 .but-send:hover,
 .but-send:focus {
-  background-color: var(--hov-foc-color);
+  background-color: #188ce8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: var(--hov-foc-color);
 }
-/*------------------Блок SOLUTiONS AND------------------------*/
-
-/*------------------BLOCK PROPERTY----------------------*/
+/*------------разметка  solutions and----------*/
+/*------------разметка vlastivosti----------*/
 .box-section {
   padding-top: 94px;
 }
@@ -524,9 +531,8 @@ textarea:focus {
   letter-spacing: 0.03em;
 }
 
-/*--------------------BLOCK PROPERTY AND----------------------*/
-
-/*-------------------BLOCK DO SAMESING----------------------*/
+/*------------разметка vlastivosti and----------*/
+/*----------what-we-are-doing-------*/
 .doing {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -574,9 +580,8 @@ textarea:focus {
   font-weight: 700;
   transform: translateY(0);
 }
-/*-------------------BLOCK DO SAMESING AND----------------*/
-
-/*----------------------BLOCK OUR TEAM--------------------*/
+/*----------what-we-are-doing and-------*/
+/*----------our-team-----------*/
 .our-team {
   background: var(--text-bg-dop);
   padding-top: 94px;
@@ -602,6 +607,9 @@ textarea:focus {
   border-radius: 0px 0px 4px 4px;
 }
 
+/* .foto-ouer-team {
+ 
+} */
 .foto-ouer-team {
   display: flex;
 }
@@ -666,9 +674,8 @@ textarea:focus {
   width: 20px;
   height: 20px;
 }
-/*---------------------BLOCK OUR TEAM AND-------------------*/
 
-/*-------------------BLOCK REGULAR CUSTOMERS-------------*/
+/*---------Постоянные клиенты----*/
 .section-klient {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -721,15 +728,15 @@ textarea:focus {
   height: 60px;
 }
 
-/*---------------BLOCK REGULAR CUSTOMERS AND----------------*/
-
-/*------------------------BLOCK FUTER----------------------*/
+/*----------our-team and-----------*/
+/*----------footer-----------*/
 footer {
   background: var(--dg-sacond-color);
 }
 .fut-box {
   padding-top: 60px;
   padding-bottom: 60px;
+
   width: auto;
   margin: 0px auto;
 }
@@ -820,6 +827,9 @@ footer {
   margin-bottom: 15px;
 }
 
+/*----------Новый блок------------*/
+
+/*-------portfolio work---------*/
 .fut-container {
   display: flex;
   align-items: baseline;
@@ -857,21 +867,26 @@ footer {
   height: 20px;
 }
 
-/*-------------------BLOCK FOOTER AND------------------*/
+/*----------footer and-----------*/
 .ouer-work {
   padding-top: 100px;
   margin: 0px;
 }
-
+/* .our-work-done{
+        display: none;
+    } */
 .section-but {
   padding-top: 100px;
   padding-bottom: 0;
   border-top: 1px solid #ececec;
 }
 .button-tipe {
+  /* background-color: var(--text-bg-dop); */
   list-style: none;
   min-width: unset;
+  /* display: inline-block; */
   display: flex;
+  /* width: calc(100%/5); */
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
@@ -882,7 +897,9 @@ footer {
 .but.mar {
   margin-right: 0px;
 }
-
+/* button {
+  
+} */
 .but {
   color: var(--text-dec-black);
   font-family: inherit;
