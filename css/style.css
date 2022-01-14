@@ -45,9 +45,7 @@ body {
   margin-left: 0 auto;
   align-items: center;
 }
-.had {
-  display: flex;
-}
+
 .main-nav {
   color: var(--text-dec-black);
   display: flex;
@@ -85,25 +83,15 @@ body {
 .logoand:hover {
   color: var(--hov-foc-color);
 }
-.logo > span {
-  color: var(--hov-foc-color);
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.92;
-  letter-spacing: 0.03em;
-}
-.stpoco {
+
+.navbox {
   color: var(--text-dec-black);
   list-style: none;
   display: flex;
   margin-left: 93px;
 }
-.boxin {
-  margin-right: 50px;
-  position: relative;
-}
-.stpoco .current::after {
+
+.navbox--current::after {
   content: "";
   display: inline;
   width: 100%;
@@ -114,10 +102,10 @@ body {
   bottom: 0;
   border-radius: 4px;
 }
-.stpoco .current {
+.navbox .current {
   color: var(--hov-foc-color);
 }
-.link {
+.navbox__link {
   color: var(--text-dec-black);
   text-decoration: none;
   letter-spacing: 0.02em;
@@ -127,6 +115,21 @@ body {
   font-weight: 500;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.navbox__boxin {
+  margin-right: 50px;
+  position: relative;
+}
+.navbox--current::after {
+  content: "";
+  display: inline;
+  width: 100%;
+  height: 5px;
+  background-color: var(--hov-foc-color);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 4px;
+}
 .contact {
   list-style: none;
   font-size: 14px;
@@ -135,14 +138,14 @@ body {
   margin-left: auto;
   align-items: center;
 }
-.contact .link {
+.contact .navbox__link {
   color: var(--text-main-color);
   text-decoration: none;
   list-style: none;
   display: inline-flex;
   fill: var(--text-main-color);
 }
-.contact .linka {
+.contact .contact__linka {
   margin-right: 50px;
   font-size: 14px;
   align-items: center;
@@ -150,44 +153,27 @@ body {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
-.linka:last-child {
+.contact__linka:last-child {
   margin-right: 0px;
 }
-.link:hover,
-.link:focus {
+.navbox__link:hover,
+.navbox__link:focus {
   color: var(--hov-foc-color);
   fill: var(--hov-foc-color);
 }
-.marlin {
-  margin-right: 50px;
-}
-.linka:hover,
-.linka:focus {
+
+.contact__linka:hover,
+.contact__linka:focus {
   fill: var(--hov-foc-color);
 }
-.tel-befor {
-  width: 100%;
-  height: 100%;
-  margin-right: 10px;
-  fill: var(--text-main-color);
-}
-.tel-befor:hover {
-  fill: var(--hov-foc-color);
-}
-.tel-svg {
+
+.contact__telsvg {
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
-.phone-a {
-  margin-right: 10px;
-  fill: var(--text-main-color);
-}
-.phone-a:hover,
-.phone-a:focus {
-  fill: var(--hov-foc-color);
-}
-.phone-svg {
+
+.contact__phonesvg {
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -627,8 +613,6 @@ textarea:focus {
   margin-bottom: 16px;
 }
 
-/*-------------jg------*/
-
 .icomcparens {
   display: flex;
   justify-content: space-between;
@@ -857,7 +841,10 @@ footer {
   height: 20px;
 }
 
-/*-------------------BLOCK FOOTER AND------------------*/
+/*---------------BLOCK FOOTER AND------------------*/
+
+/*----------BLOCK BLOCK BUTTONS PORTFOLIO--------*/
+
 .ouer-work {
   padding-top: 100px;
   margin: 0px;
@@ -868,7 +855,7 @@ footer {
   padding-bottom: 0;
   border-top: 1px solid #ececec;
 }
-.button-tipe {
+.pushbutton {
   list-style: none;
   min-width: unset;
   display: flex;
@@ -876,14 +863,14 @@ footer {
   justify-content: center;
   margin-bottom: 50px;
 }
-.butli {
+.pushbutton__butli {
   margin-right: 8px;
 }
-.but.mar {
+.pushbutton__mar {
   margin-right: 0px;
 }
 
-.but {
+.pushbutton__but {
   color: var(--text-dec-black);
   font-family: inherit;
   font-weight: 500;
@@ -901,14 +888,15 @@ footer {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: var(--hov-foc-color);
 }
-.but:hover,
-.but:focus {
+.pushbutton__but:hover,
+.pushbutton__but:focus {
   color: var(--main-bg-color);
   background-color: var(--hov-foc-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-/*----------after batton!!!!!!!!!-------*/
+/*----------BLOCK BLOCK BUTTONS PORTFOLIO AND--------*/
+/*-----------------BLOCK PICTURES-------------------*/
 
 .all-inf-teh {
   list-style: none;
@@ -916,6 +904,7 @@ footer {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+  padding-bottom: 94px;
 }
 .all-inf-teh-li {
   display: flex;
@@ -1058,3 +1047,4 @@ img {
   margin-left: 10px;
   fill: var(--text-bg-dop);
 }
+/*-----------------BLOCK PICTURES AND---------------*/
