@@ -1,4 +1,4 @@
-/* -----------Основа----------*/
+/* -----------START----------*/
 
 h1,
 h2,
@@ -29,6 +29,9 @@ body {
   --text-bg-dop: #f5f4fa;
 }
 
+/* --------------------AND--------------------------*/
+
+/* --------------------BLOCK NAVIGATION--------------------*/
 .container {
   width: 1200px;
   outline: 1px solid transparent;
@@ -36,9 +39,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* -----------Основа AND----------*/
-
-/* -----------Навигация Блок----------*/
 .header-nav {
   background-color: var(--main-bg-color);
   display: flex;
@@ -192,9 +192,9 @@ body {
   height: 16px;
   margin-right: 10px;
 }
-/* -----------Навигация Блок AND----------*/
+/* -----------BLOCK NAVIGATION AND----------*/
 
-/*------------Блок SOLUTIONS--------------*/
+/*------------BLOCK SOLUTIONS--------------*/
 .solutions {
   background-color: var(--dg-sacond-color);
   letter-spacing: 0.06em;
