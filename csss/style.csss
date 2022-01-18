@@ -126,17 +126,7 @@ body {
   margin-right: 50px;
   position: relative;
 }
-/* .navbox--current::after {
-  content: "";
-  display: inline;
-  width: 100%;
-  height: 5px;
-  background-color: var(--hov-foc-color);
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  border-radius: 4px;
-} */
+
 .navbox--current {
   color: var(--hov-foc-color);
 }
