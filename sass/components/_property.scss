@@ -1,0 +1,44 @@
+/*------------------BLOCK PROPERTY-------------*/
+.box-section {
+  padding-top: 94px;
+}
+
+.vlastivosti {
+  list-style: none;
+  display: flex;
+}
+.vlastivosti__groop-pec:first-child {
+  margin-left: 0px;
+}
+.vlastivosti__icomfive {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.vlastivosti__groop-pec {
+  width: calc(100% / 4);
+  margin-left: 30px;
+}
+.vlastivosti__good-job {
+  color: var(--text-dec-black);
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.vlastivosti__exersise {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/*--------------------BLOCK PROPERTY AND----------------------*/
