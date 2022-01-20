@@ -17,10 +17,12 @@
   list-style: none;
   display: flex;
   width: calc(100% / 3-30);
+  height: 294px;
 }
 .doing__threefoto {
   margin-right: 30px;
   width: calc(100% / 3);
+  height: 294px;
 }
 .doing__threefoto:last-child {
   margin-right: 0px;

@@ -3,14 +3,14 @@
   padding-top: 94px;
 }
 
-.vlastivosti {
+.module {
   list-style: none;
   display: flex;
 }
-.vlastivosti__groop-pec:first-child {
+.module__groop-pec:first-child {
   margin-left: 0px;
 }
-.vlastivosti__icomfive {
+.module__icomfive {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -20,11 +20,11 @@
   padding-left: 100px;
   padding-right: 100px;
 }
-.vlastivosti__groop-pec {
+.module__groop-pec {
   width: calc(100% / 4);
   margin-left: 30px;
 }
-.vlastivosti__good-job {
+.module__good-job {
   color: var(--text-dec-black);
   font-family: Roboto;
   font-weight: 700;
@@ -34,7 +34,7 @@
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.vlastivosti__exersise {
+.module__exersise {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
